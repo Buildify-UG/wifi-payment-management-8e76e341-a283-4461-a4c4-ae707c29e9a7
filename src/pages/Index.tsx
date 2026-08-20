@@ -8,23 +8,23 @@ export default function TalibNet() {
   const packages = [
     {
       id: 'hours-12',
-      name: '12 Hours',
+      name: 'Masaa 12',
       price: 500,
-      duration: '12 hours',
+      duration: 'Masaa 12',
       icon: Clock,
     },
     {
       id: 'day-1',
-      name: '1 Day',
+      name: 'Siku 1',
       price: 1000,
-      duration: '24 hours',
+      duration: 'Saa 24',
       icon: Calendar,
     },
     {
       id: 'week-1',
-      name: '1 Week',
+      name: 'Wiki 1',
       price: 5000,
-      duration: '7 days',
+      duration: 'Siku 7',
       icon: Calendar,
     },
   ];
@@ -60,7 +60,7 @@ export default function TalibNet() {
           </div>
           <h1 className="text-4xl font-bold text-white mb-2">TalibNet</h1>
           <p className="text-cyan-400 text-lg font-semibold">WI-FI</p>
-          <p className="text-slate-300 mt-4 text-sm">Fast, Reliable WiFi Access</p>
+          <p className="text-slate-300 mt-4 text-sm">Intaneti Haraka na Aaminika</p>
         </div>
       </div>
 
@@ -68,35 +68,35 @@ export default function TalibNet() {
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* How It Works */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">How It Works</h2>
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Jinsi ya Kufanya Kazi</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 backdrop-blur">
               <div className="bg-cyan-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-cyan-400 font-bold text-lg">1</span>
               </div>
-              <h3 className="text-white font-semibold mb-2">Choose Plan</h3>
-              <p className="text-slate-300 text-sm">Select your WiFi package below</p>
+              <h3 className="text-white font-semibold mb-2">Chagua Mipango</h3>
+              <p className="text-slate-300 text-sm">Chagua mipango ya WiFi hapo chini</p>
             </div>
             <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 backdrop-blur">
               <div className="bg-cyan-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-cyan-400 font-bold text-lg">2</span>
               </div>
-              <h3 className="text-white font-semibold mb-2">Pay via Phone</h3>
-              <p className="text-slate-300 text-sm">Send payment to +255679545834</p>
+              <h3 className="text-white font-semibold mb-2">Lipa Kupitia Simu</h3>
+              <p className="text-slate-300 text-sm">Tuma malipo kwa +255679545834</p>
             </div>
             <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 backdrop-blur">
               <div className="bg-cyan-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-cyan-400 font-bold text-lg">3</span>
               </div>
-              <h3 className="text-white font-semibold mb-2">Get Access</h3>
-              <p className="text-slate-300 text-sm">Connect instantly & enjoy WiFi</p>
+              <h3 className="text-white font-semibold mb-2">Pata Upatikanaji</h3>
+              <p className="text-slate-300 text-sm">Unganisha mara moja na furahia WiFi</p>
             </div>
           </div>
         </div>
 
         {/* Packages */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">Choose Your Plan</h2>
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Chagua Mipango Yako</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {packages.map((pkg) => {
               const Icon = pkg.icon;
@@ -137,10 +137,10 @@ export default function TalibNet() {
                     } disabled:opacity-50`}
                   >
                     {paymentStatus === 'processing' && isSelected
-                      ? 'Processing...'
+                      ? 'Inachakatia...'
                       : paymentStatus === 'success' && isSelected
-                      ? 'Connected!'
-                      : 'Get Access'}
+                      ? 'Umejiunga!'
+                      : 'Pata Upatikanaji'}
                   </button>
                 </div>
               );
@@ -153,16 +153,16 @@ export default function TalibNet() {
           <div className="flex items-start gap-4">
             <AlertCircle className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
             <div>
-              <h3 className="text-white font-semibold mb-3">Payment Details</h3>
+              <h3 className="text-white font-semibold mb-3">Maelezo ya Malipo</h3>
               <div className="space-y-2 text-slate-300 text-sm">
                 <p>
-                  <span className="text-cyan-400 font-semibold">Recipient:</span> TALIB HAMAD MAKAME
+                  <span className="text-cyan-400 font-semibold">Mpokeaji:</span> TALIB HAMAD MAKAME
                 </p>
                 <p>
-                  <span className="text-cyan-400 font-semibold">Phone:</span> +255679545834
+                  <span className="text-cyan-400 font-semibold">Simu:</span> +255679545834
                 </p>
                 <p className="text-xs text-slate-400 mt-4">
-                  After payment, your WiFi access will be activated immediately. Your connection will automatically expire when your plan duration ends.
+                  Baada ya kulipa, upatikanaji wako wa WiFi utaamilishwa mara moja. Muunganisho wako utakataa kiotomatiki wakati mipango yako inapoishia.
                 </p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function TalibNet() {
           <div className="fixed inset-0 flex items-center justify-center p-4 pointer-events-none">
             <div className="bg-green-500/90 text-white rounded-lg p-6 shadow-2xl pointer-events-auto text-center max-w-sm">
               <Check className="w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Welcome to TalibNet!</h3>
-              <p className="text-sm">Your {selectedPkg.name} plan is now active. Enjoy fast WiFi!</p>
+              <h3 className="text-xl font-bold mb-2">Karibu kwa TalibNet!</h3>
+              <p className="text-sm">Mipango yako ya {selectedPkg.name} sasa ni hai. Furahia WiFi haraka!</p>
             </div>
           </div>
         )}
@@ -184,7 +184,7 @@ export default function TalibNet() {
       {/* Footer */}
       <div className="border-t border-slate-700 mt-16 py-8 px-6">
         <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
-          <p>TalibNet WiFi © 2024 | Fast, Reliable Internet Access</p>
+          <p>TalibNet WiFi © 2024 | Intaneti Haraka na Aaminika</p>
         </div>
       </div>
     </div>
